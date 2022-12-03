@@ -1,0 +1,44 @@
+Bağlı Listeler
+
+Yavuz Selim Güzel
+Elektrik Elektronik Mühendisliği, Karatay Üniversitesi
+EEE121: Algoritma ve Programlama
+Dr. Öğr. Üyesi BURAK YILMAZ
+03.12.2022
+ 
+ Linked list, yazılım dünyasında önemli yeri olan veri yapılarından biridir. Temel mantık olarak, linked list’te her bir eleman(node) tutması gereken dataya ilaveten kendinden bir sonra gelecek olan node’un adresini tutar. Dolayısıyla her linked list node’u kendisinden bir sonraki node’un yerini bilir. Bu da linked listlerin bellekte sıralanış şekli açısından bize esneklik sağlar. Örneğin, bir array tanımladığınızda arrayın boyutunu başlangıçta int[] myArray = new int[10];  şeklinde statik olarak vermemiz gerekir. Bu da bize bellekte sıralı olarak arka arkaya ayrılmış 10 intlik bir alan rezerve etmek etmektir. Kullansanız da kullanmasanız da bu alan sizin için ayrılır. Hatta bellek alanları ardışık rezerve edildiği için pointer ile ilk index adresini alıp diğer elemanlara, ilk adrese bellekte 4er bytelık değerler ekleyerek ulaşabilirsiniz de. Ancak linked list’te böyle bir zorunluluk yok. Linked listin her node’u bir diğerinin adresini bildiğinden, node’lar bellekte bambaşka boş buldukları alanlara yerleşebilirler. Dolayısıyla linked listin eleman sayısı da dinamik olarak artabilir. Bağlı Listeler temelde bir değişkendir. Ancak sınırlarını bizim çizeceğimiz bir değişkendir. Bağlı Listeleri ayırt edici tarafı, değişkenlerin birbirleri ile alakasıdır. Dizi veri yapısına benzese de dinamik programlama mantalitesi içerisinde çok özel bir yere sahiptir. Bu yüzden dizi ile yapabileceklerinizin çok ötesinde şeyler yapabiliriz. Bağlı Listeler yani linked lists birbirleri ile ilişkisi olan veri tiplerini kast eder. Değişkenlerin birbirleri ile olan ilişkileri ise kategorilerini oluşturur. Birbirleri ile olan ilişkileri düşünüldüğünde Bağlı Listeleri Kategorize edecek olursak;
+Bağlı Liste Çeşitleri
+•	Tek Yönlü Bağlı Listeler (Singular Linked Lists)
+•	Çift Yönlü Bağlı Listeler (Doubly Linked Lists)
+•	Dairesel Bağlı Listeler (Circular Linked Lists)
+Bağlı Listeler üzerinde Yapılabilecek işlemleri sınırlandırmak olmaz, ancak yaygın olarak kullanılan işlemleri kümeleyecek olursak şöyle bir manzara karşımıza çıkar.
+Bağlı Liste Operasyonları
+•	Dolaşma — Arama İşlemleri (Traverse)
+•	Ekleme İşlemleri (Insert)
+•	Silme İşlemleri (Delete)
+•	Ters Döndürme İşlemleri (Reverse)
+Ekleme ve Silme İşlemleri ise kendi içerisinde dallara ayrılır. Çünkü Bağlı Listeler özel bir veri tipidir. Ekleme ve silme işlemlerini biraz maliyetli olarak düşünebiliriz.
+Bağlı Liste Operasyonları Alt Dalları
+•	Sona Eleman Ekleme
+•	Sondan Eleman Silme
+•	Araya Eleman Ekleme
+•	Aradan Eleman Silme
+•	Başa Eleman Ekleme
+•	Baştan Eleman Silme
+Data ve Next İfadeleri
+Düğümün Data ve Next ifadelerinden oluştuğunu söyledik. Peki bu data nedir? Neyin nesidir? Data bilgi demek, yani bizim değişkenimizin esas tutması gereken unsur data’dır. İçerisinde tutmak istediğimiz yapı yer almaktadır. C ve C++ dillerinde bu yapı struct ile oluşturulur. İçerisinde nelerin yer alacağı programcının tercihidir.
+
+Bağlı Listelerin Avantajları
+Dinamik Programlama: Bağlı listeler bize dinamik programlama imkanı veren yegane yapılardır. Bağlı listeleri istediğimiz gibi genişletebilir ya da küçültebiliriz. Sınırlarımız ram’imimizin sınırlarıdır. Dizilerde ise boyut önceden belirlendiğinden ötürü sonradan artırmamız mümkün olmaz. Aynı şekilde azaltmamız da mümkün değildir. Dizilerin içerisinde ister eleman olsun, ister olmasın, o değişkeni oluşturduğumuz anda belirttiğimiz alan ona ayrılır. Bağlı Listelerde ise eleman ekledikçe alan dinamik şekilde artırılırken, sildikçe de azaltılır.
+Bağlı Listelerin Dezavantajları
+Yüksek Hafıza Kullanımı: Bağlı listelerin en öne çıkan dezavantajı fazladan alan kullanmasıdır. Kullanmış olduğu bu alan, kendisinden sonra gelen işaretçileri tutan değişkenlerdir. Dizilerde böyle bir durum yaşanmaz.
+ 
+Referanslar
+https://meminoglu.medium.com/bağlı-liste-linked-list-nedir-f83b15353900
+https://tr.wikipedia.org/wiki/Bağlı_liste
+https://www.mshowto.org/veri-yapilari-2-bagli-listeler.html
+http://cagataykiziltan.net/veri-yapilari-data-structures/1-linked-list-bagli-listeler/
+https://bilgisayarkavramlari.com/2007/05/03/linked-list-linkli-liste-veya-bagli-liste/
+https://notpast.com/c_programlama/Bagli-Listeler-72.html
+https://nerdbook.wordpress.com/2018/03/21/bagli-listeler/
+
